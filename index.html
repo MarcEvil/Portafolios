@@ -7,7 +7,6 @@
     <title>Marcelo Mardones | Portafolio Tech</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -15,14 +14,16 @@
 
     <input type="checkbox" id="btn-contactos" class="panel-toggle">
     <input type="checkbox" id="btn-proyectos" class="panel-toggle">
+    <input type="checkbox" id="trigger-form" class="panel-toggle">
 
     <aside id="contactos-sidebar" class="sidebar-panel left">
         <div class="sidebar-header">
             <label for="btn-contactos" class="close-btn">✕ CANCEL_LINK</label>
         </div>
+        
         <div class="sidebar-inner">
             <h2 class="sidebar-title">CANALES_COMUNICACIÓN</h2>
-
+            
             <div class="social-grid-sidebar">
                 <a href="https://github.com/MarcEvil" target="_blank" class="social-card">
                     <i class="fa-brands fa-github"></i>
@@ -38,26 +39,35 @@
                         <span class="social-desc">Professional Network</span>
                     </div>
                 </a>
+                
+                <label for="trigger-form" class="social-card btn-form-trigger">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="social-info">
+                        <span class="social-label">EMAIL_DIRECTO</span>
+                        <span class="social-desc">Desplegar formulario</span>
+                    </div>
+                </label>
             </div>
+        </div>
 
-            <div class="contact-form-container">
-                <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
-                <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label>NOMBRE_USUARIO:</label>
-                        <input type="text" name="name" required placeholder="Ej: Juan Pérez">
-                    </div>
-                    <div class="form-group">
-                        <label>EMAIL_REMITENTE:</label>
-                        <input type="email" name="email" required placeholder="usuario@dominio.com">
-                    </div>
-                    <div class="form-group">
-                        <label>MENSAJE_SISTEMA:</label>
-                        <textarea name="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
-                </form>
-            </div>
+        <div class="external-form-container">
+            <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
+            <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>NOMBRE_USUARIO:</label>
+                    <input type="text" name="name" required placeholder="Ej: Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label>EMAIL_REMITENTE:</label>
+                    <input type="email" name="email" required placeholder="usuario@dominio.com">
+                </div>
+                <div class="form-group">
+                    <label>MENSAJE_SISTEMA:</label>
+                    <textarea name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
+                <label for="trigger-form" class="close-form">✕ CERRAR_FORM</label>
+            </form>
         </div>
     </aside>
 
@@ -120,10 +130,8 @@
             <h2 class="section-title">INFO_SISTEMA: PERFIL_PROFESIONAL</h2>
             <div class="about-content">
                 <p class="profile-text">
-                    <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> titulado en 2024, con una trayectoria
-                    híbrida que combina
-                    <span class="neon-text">+20 años de experiencia autodidacta</span> en infraestructura y
-                    mantenimiento de sistemas con una especialización actual como
+                    <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> titulado en 2024, con una trayectoria híbrida que combina 
+                    <span class="neon-text">+20 años de experiencia autodidacta</span> en infraestructura y mantenimiento de sistemas con una especialización actual como 
                     <strong class="highlight">DESARROLLADOR FULL STACK JAVASCRIPT</strong>.
                 </p>
                 <div class="skills-row">
