@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Mardones | Portafolio Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/portafolio/assets/css/style.css">
+    <link rel="stylesheet" href="portafolio/assets/css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="btn-contactos" class="panel-toggle">
+    <input type="checkbox" id="btn-proyectos" class="panel-toggle">
+
+    <aside id="contactos-sidebar" class="sidebar-panel left">
+        <div class="sidebar-header">
+            <label for="btn-contactos" class="close-btn">✕ CANCEL_LINK</label>
+        </div>
+        <div class="sidebar-inner">
+            <h2 class="sidebar-title">CANALES_COMUNICACIÓN</h2>
+            <div class="social-grid-sidebar">
+                <a href="https://github.com/MarcEvil" target="_blank" class="social-card">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="social-info">
+                        <span class="social-label">GITHUB</span>
+                        <span class="social-desc">Source Code / Repos</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marcelo-mardones-g-6737b3226/" target="_blank" class="social-card">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <div class="social-info">
+                        <span class="social-label">LINKEDIN</span>
+                        <span class="social-desc">Professional Network</span>
+                    </div>
+                </a>
+                <a href="mailto:marcelo@ejemplo.com" class="social-card">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="social-info">
+                        <span class="social-label">EMAIL_DIRECTO</span>
+                        <span class="social-desc">Enviar mensaje</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="proyectos-sidebar" class="sidebar-panel right">
+        <div class="sidebar-header">
+            <label for="btn-proyectos" class="close-btn">✕ CLOSE_PROJECTS</label>
+        </div>
+        <div class="sidebar-inner">
+            <h2 class="sidebar-title">PROYECTOS_RECIENTES</h2>
+            <div class="grid-sidebar">
+                <div class="card">
+                    <a href="https://marcevil.github.io/TaskFlow/" target="_blank" class="project-link">
+                        <span class="card-tag">NODE_JS</span>
+                        <h3>TaskFlow</h3>
+                        <p>Gestión robusta con Sequelize y Node.js para datos relacionales.</p>
+                        <span class="fake-btn">EJECUTAR_SOURCE →</span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://marcevil.github.io/BancoFalaferio_M2/" target="_blank" class="project-link">
+                        <span class="card-tag">WEB_DEV</span>
+                        <h3>Curriculum Vitae</h3>
+                        <p>Trayectoria técnica profesional detallada en entorno web.</p>
+                        <span class="fake-btn">EJECUTAR_SOURCE →</span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#" target="_blank" class="project-link">
+                        <span class="card-tag">REACT_NATIVE</span>
+                        <h3>Mobile App</h3>
+                        <p>Aplicación de lista de tareas optimizada para dispositivos móviles.</p>
+                        <span class="fake-btn">EJECUTAR_SOURCE →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <nav class="top-nav">
+        <div class="container nav-flex">
+            <div class="nav-brand">M_MARDONES.SYS</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi" class="nav-btn">SOBRE_MÍ</a></li>
+                <li><label for="btn-proyectos" class="nav-btn">PROYECTOS</label></li>
+                <li><label for="btn-contactos" class="nav-btn">CONTACTO</label></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header id="inicio" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-image-container">
+                    <img src="/portafolio/assets/img/perfil.jpg" alt="Marcelo Mardones" class="hero-img">
+                    <div class="img-frame"></div>
+                </div>
+                <div class="hero-text">
+                    <h1>HOLA, SOY <span>MARCELO MARDONES</span></h1>
+                    <p class="hero-subtitle">TÉCNICO EN INFORMÁTICA // FULL-STACK DEVELOPER</p>
+                    <div class="hero-actions">
+                        <label for="btn-proyectos" class="btn-cta">EXPLORAR_TRABAJOS.EXE</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="sobre-mi" class="container" data-num="1">
+            <h2 class="section-title">INFO_SISTEMA: PERFIL_PROFESIONAL</h2>
+            <div class="about-content">
+                <p class="profile-text">
+                    <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> titulado en 2024, con una trayectoria
+                    híbrida que combina
+                    <span class="neon-text">+20 años de experiencia autodidacta</span> en infraestructura y
+                    mantenimiento de sistemas con una especialización actual como
+                    <strong class="highlight">DESARROLLADOR FULL STACK JAVASCRIPT</strong> (Certificación Talento
+                    Digital / Sence).
+                </p>
+                <p class="profile-text">
+                    Experto en la arquitectura de soluciones prácticas y eficientes, domino el ecosistema de
+                    <span class="skill-pill">HTML5</span>
+                    <span class="skill-pill">CSS3</span>
+                    <span class="skill-pill">JS_ES6+</span>
+                    <span class="skill-pill">NODE.JS</span>
+                    <span class="skill-pill">POSTGRESQL</span>
+                    y frameworks modernos. Mi perfil se define por el aprendizaje continuo y la capacidad técnica para
+                    integrar hardware y software en entornos de alto rendimiento.
+                </p>
+            </div>
+        </section>
+
+        <footer id="contacto">
+            <div class="container">
+                <h2 class="footer-title">CONTACTO_INMEDIATO</h2>
+                <div class="footer-email">📧 email@ejemplo.com</div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
