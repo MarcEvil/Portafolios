@@ -7,7 +7,7 @@
     <title>Marcelo Mardones | Portafolio Tech</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -22,6 +22,7 @@
         </div>
         <div class="sidebar-inner">
             <h2 class="sidebar-title">CANALES_COMUNICACIÓN</h2>
+
             <div class="social-grid-sidebar">
                 <a href="https://github.com/MarcEvil" target="_blank" class="social-card">
                     <i class="fa-brands fa-github"></i>
@@ -37,13 +38,25 @@
                         <span class="social-desc">Professional Network</span>
                     </div>
                 </a>
-                <a href="mailto:marcelo@ejemplo.com" class="social-card">
-                    <i class="fa-regular fa-envelope"></i>
-                    <div class="social-info">
-                        <span class="social-label">EMAIL_DIRECTO</span>
-                        <span class="social-desc">Enviar mensaje</span>
+            </div>
+
+            <div class="contact-form-container">
+                <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
+                <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label>NOMBRE_USUARIO:</label>
+                        <input type="text" name="name" required placeholder="Ej: Juan Pérez">
                     </div>
-                </a>
+                    <div class="form-group">
+                        <label>EMAIL_REMITENTE:</label>
+                        <input type="email" name="email" required placeholder="usuario@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label>MENSAJE_SISTEMA:</label>
+                        <textarea name="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
+                </form>
             </div>
         </div>
     </aside>
