@@ -52,17 +52,21 @@
 
         <div class="external-form-container">
             <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
-            <form action="https://formspree.io/f/mvzvaejw" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
+            <form action="https://formspree.io/f/mvzvaejw" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>NOMBRE_USUARIO:</label>
+                    <input type="text" name="name" required placeholder="Ej: Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label>EMAIL_REMITENTE:</label>
+                    <input type="email" name="email" required placeholder="usuario@dominio.com">
+                </div>
+                <div class="form-group">
+                    <label>MENSAJE_SISTEMA:</label>
+                    <textarea name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
+                <label for="trigger-form" class="close-form">✕ CERRAR_FORM</label>
             </form>
         </div>
     </aside>
