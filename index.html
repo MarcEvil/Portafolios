@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelo Mardones | Portafolio Tech</title>
+    <title>M_MARDONES.SYS | Full Stack Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <<<<<<< HEAD
     <link rel="stylesheet" href="assets/css/style.css?v=1.1">
 =======
     <link rel="stylesheet" href="assets/css/style.css">
 >>>>>>> b214215 (Update: Implementación de formulario Formspree y ajuste de rutas CSS)
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.1">
+>>>>>>> a548901 (UI Update: Sistema de animación hacker, modal de contacto y diseño industrial)
 </head>
 
 <body>
@@ -20,14 +25,22 @@
     <input type="checkbox" id="btn-proyectos" class="panel-toggle">
     <input type="checkbox" id="trigger-form" class="panel-toggle">
 
-    <aside id="contactos-sidebar" class="sidebar-panel left">
-        <div class="sidebar-header">
-            <label for="btn-contactos" class="close-btn">✕ CANCEL_LINK</label>
+    <nav class="top-nav">
+        <div class="nav-flex container">
+            <div class="nav-brand hacker-effect">M_MARDONES.SYS</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi" class="nav-btn">SOBRE_MÍ</a></li>
+                <li><label for="btn-proyectos" class="nav-btn">PROYECTOS</label></li>
+                <li><label for="btn-contactos" class="nav-btn active">CONTACTO</label></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="sidebar-inner">
-            <h2 class="sidebar-title">CANALES_COMUNICACIÓN</h2>
+    <aside class="sidebar-panel left">
+        <label for="btn-contactos" class="close-btn">✕ CANCEL_LINK</label>
+        <h2 class="sidebar-title hacker-effect">CANALES_COMUNICACIÓN</h2>
 
+<<<<<<< HEAD
             <div class="social-grid-sidebar">
                 <a href="https://github.com/MarcEvil" target="_blank" class="social-card">
                     <i class="fa-brands fa-github"></i>
@@ -74,11 +87,35 @@
                 </form>
 >>>>>>> b214215 (Update: Implementación de formulario Formspree y ajuste de rutas CSS)
             </div>
+=======
+        <div class="social-grid-sidebar">
+            <a href="https://github.com/marcelo-mardones" target="_blank" class="social-card glitch-hover">
+                <i class="fab fa-github"></i>
+                <div class="social-info">
+                    <span class="social-label">GITHUB</span>
+                    <span class="social-desc">Source Code / Repos</span>
+                </div>
+            </a>
+            <a href="https://linkedin.com/in/marcelomardones" target="_blank" class="social-card glitch-hover">
+                <i class="fab fa-linkedin"></i>
+                <div class="social-info">
+                    <span class="social-label">LINKEDIN</span>
+                    <span class="social-desc">Professional Network</span>
+                </div>
+            </a>
+            <label for="trigger-form" class="social-card glitch-hover">
+                <i class="fas fa-envelope"></i>
+                <div class="social-info">
+                    <span class="social-label">EMAIL_DIRECTO</span>
+                    <span class="social-desc">Desplegar formulario</span>
+                </div>
+            </label>
+>>>>>>> a548901 (UI Update: Sistema de animación hacker, modal de contacto y diseño industrial)
         </div>
 
         <div class="external-form-container">
-            <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
-            <form action="https://formspree.io/f/mvzvaejw" method="POST" class="contact-form">
+            <h3 class="form-subtitle hacker-effect">ENVIAR_MENSAJE.EXE</h3>
+            <form action="https://formspree.io/f/tu_codigo" method="POST" class="contact-form">
                 <div class="form-group">
                     <label>NOMBRE_USUARIO:</label>
                     <input type="text" name="name" required placeholder="Ej: Juan Pérez">
@@ -89,14 +126,15 @@
                 </div>
                 <div class="form-group">
                     <label>MENSAJE_SISTEMA:</label>
-                    <textarea name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                    <textarea name="message" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
                 </div>
-                <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
-                <label for="trigger-form" class="close-form">✕ CERRAR_FORM</label>
+                <button type="submit" class="btn-send glitch-hover">EJECUTAR_ENVÍO →</button>
+                <label for="trigger-form" class="close-form">✕ CERRAR_VENTANA</label>
             </form>
         </div>
     </aside>
 
+<<<<<<< HEAD
     <aside id="proyectos-sidebar" class="sidebar-panel right">
         <div class="sidebar-header">
             <label for="btn-proyectos" class="close-btn">✕ CLOSE_PROJECTS</label>
@@ -120,21 +158,46 @@
                         <span class="fake-btn">EJECUTAR_SOURCE →</span>
                     </a>
                 </div>
+=======
+    <aside class="sidebar-panel right">
+        <label for="btn-proyectos" class="close-btn">✕ CLOSE_PROJECTS</label>
+        <h2 class="sidebar-title hacker-effect">PROYECTOS_RECIENTES</h2>
+
+        <div class="grid-sidebar">
+            <div class="card glitch-hover">
+                <h3>TaskFlow</h3>
+                <p>Gestión robusta con Sequelize y Node.js.</p>
+                <span class="fake-btn">EJECUTAR_SOURCE +</span>
+            </div>
+            <div class="card glitch-hover">
+                <h3>Alky Wallet</h3>
+                <p>Simulador de billetera digital con Bootstrap.</p>
+                <span class="fake-btn">EJECUTAR_SOURCE +</span>
+            </div>
+            <div class="card glitch-hover">
+                <h3>CheckList-Reader</h3>
+                <p>Procesador JSON con Node.js y Chalk.</p>
+                <span class="fake-btn">EJECUTAR_SOURCE +</span>
+>>>>>>> a548901 (UI Update: Sistema de animación hacker, modal de contacto y diseño industrial)
             </div>
         </div>
     </aside>
 
-    <nav class="top-nav">
-        <div class="container nav-flex">
-            <div class="nav-brand">M_MARDONES.SYS</div>
-            <ul class="nav-links">
-                <li><a href="#sobre-mi" class="nav-btn">SOBRE_MÍ</a></li>
-                <li><label for="btn-proyectos" class="nav-btn">PROYECTOS</label></li>
-                <li><label for="btn-contactos" class="nav-btn">CONTACTO</label></li>
-            </ul>
+    <header class="hero-section container">
+        <div class="hero-grid">
+            <div class="hero-image-container">
+                <img src="assets/img/perfil.jpg" alt="Marcelo Mardones" class="hero-img">
+                <div class="img-frame"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hacker-effect">HOLA, SOY<br><span>MARCELO MARDONES</span></h1>
+                <p class="hero-subtitle">TÉCNICO EN INFORMÁTICA // FULL-STACK DEVELOPER</p>
+                <label for="btn-proyectos" class="btn-cta glitch-hover">EXPLORAR_TRABAJOS.EXE</label>
+            </div>
         </div>
-    </nav>
+    </header>
 
+<<<<<<< HEAD
     <main class="main-content">
         <header id="inicio" class="hero-section">
             <div class="container hero-grid">
@@ -151,35 +214,35 @@
                 </div>
             </div>
         </header>
+=======
+    <section id="sobre-mi" class="container">
+        <h2 class="section-title hacker-effect">INFO_SISTEMA: PERFIL_PROFESIONAL</h2>
+        <p class="profile-text">
+            <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> titulado en 2024, con una trayectoria híbrida que
+            combina
+            <span class="neon-text">+20 años de experiencia autodidacta</span> en infraestructura y mantenimiento de
+            sistemas con una especialización actual como
+            <strong class="highlight">DESARROLLADOR FULL STACK JAVASCRIPT</strong>.
+        </p>
+        <div class="skills-row">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JS_ES6+</span>
+            <span class="skill-pill">NODE.JS</span>
+            <span class="skill-pill">POSTGRESQL</span>
+            <span class="skill-pill">REACT</span>
+        </div>
+    </section>
+>>>>>>> a548901 (UI Update: Sistema de animación hacker, modal de contacto y diseño industrial)
 
-        <section id="sobre-mi" class="container">
-            <h2 class="section-title">INFO_SISTEMA: PERFIL_PROFESIONAL</h2>
-            <div class="about-content">
-                <p class="profile-text">
-                    <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> titulado en 2024, con una trayectoria
-                    híbrida que combina
-                    <span class="neon-text">+20 años de experiencia autodidacta</span> en infraestructura y
-                    mantenimiento de sistemas con una especialización actual como
-                    <strong class="highlight">DESARROLLADOR FULL STACK JAVASCRIPT</strong>.
-                </p>
-                <div class="skills-row">
-                    <span class="skill-pill">HTML5</span>
-                    <span class="skill-pill">CSS3</span>
-                    <span class="skill-pill">JS_ES6+</span>
-                    <span class="skill-pill">NODE.JS</span>
-                    <span class="skill-pill">POSTGRESQL</span>
-                </div>
-            </div>
-        </section>
+    <footer>
+        <div class="container">
+            <p class="hacker-effect">CONTACTO_INMEDIATO</p>
+            <p class="footer-email">marceloinformatico.82@gmail.com</p>
+        </div>
+    </footer>
 
-        <footer id="contacto">
-            <div class="container">
-                <h2 class="footer-title">CONTACTO_INMEDIATO</h2>
-                <div class="footer-email">marceloinformatico.82@gmail.com</div>
-            </div>
-        </footer>
-    </main>
-
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
