@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M_MARDONES.SYS | Full Stack Developer</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.css?v=1.1">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=2.1">
+    
+    <link rel="stylesheet" href="assets/css/style.css?v=2.2">
 </head>
-
 <body>
 
     <input type="checkbox" id="btn-contactos" class="panel-toggle">
@@ -27,7 +22,7 @@
             <ul class="nav-links">
                 <li><a href="#sobre-mi" class="nav-btn">SOBRE_MÍ</a></li>
                 <li><label for="btn-proyectos" class="nav-btn">PROYECTOS</label></li>
-                <li><label for="btn-contactos" class="nav-btn active">CONTACTO</label></li>
+                <li><label for="btn-contactos" class="nav-btn">CONTACTO</label></li>
             </ul>
         </div>
     </nav>
@@ -35,52 +30,7 @@
     <aside class="sidebar-panel left">
         <label for="btn-contactos" class="close-btn">✕ CANCEL_LINK</label>
         <h2 class="sidebar-title hacker-effect">CANALES_COMUNICACIÓN</h2>
-
-        <div class="social-grid-sidebar">
-            <a href="https://github.com/MarcEvil" target="_blank" class="social-card">
-                <i class="fa-brands fa-github"></i>
-                <div class="social-info">
-                    <span class="social-label">GITHUB</span>
-                    <span class="social-desc">Source Code / Repos</span>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/marcelo-mardones-g-6737b3226/" target="_blank" class="social-card">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <div class="social-info">
-                    <span class="social-label">LINKEDIN</span>
-                    <span class="social-desc">Professional Network</span>
-                </div>
-            </a>
-
-
-            <label for="trigger-form" class="social-card btn-form-trigger">
-                <i class="fa-regular fa-envelope"></i>
-                <div class="social-info">
-                    <span class="social-label">EMAIL_DIRECTO</span>
-                    <span class="social-desc">Desplegar formulario</span>
-                </div>
-            </label>
-
-        </div>
-
-        <div class="contact-form-container">
-            <h3 class="form-subtitle">ENVIAR_MENSAJE.EXE</h3>
-            <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label>NOMBRE_USUARIO:</label>
-                    <input type="text" name="name" required placeholder="Ej: Juan Pérez">
-                </div>
-                <div class="form-group">
-                    <label>EMAIL_REMITENTE:</label>
-                    <input type="email" name="email" required placeholder="usuario@dominio.com">
-                </div>
-                <div class="form-group">
-                    <label>MENSAJE_SISTEMA:</label>
-                    <textarea name="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
-                </div>
-                <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
-            </form>
-        </div>
+        
         <div class="social-grid-sidebar">
             <a href="https://github.com/marcelo-mardones" target="_blank" class="social-card glitch-hover">
                 <i class="fab fa-github"></i>
@@ -107,48 +57,39 @@
 
         <div class="external-form-container">
             <h3 class="form-subtitle hacker-effect">ENVIAR_MENSAJE.EXE</h3>
-            <form action="https://formspree.io/f/tu_codigo" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/tu_id" method="POST" class="contact-form">
                 <div class="form-group">
                     <label>NOMBRE_USUARIO:</label>
-                    <input type="text" name="name" required placeholder="Ej: Juan Pérez">
+                    <input type="text" name="name" required placeholder="Nombre completo">
                 </div>
                 <div class="form-group">
                     <label>EMAIL_REMITENTE:</label>
-                    <input type="email" name="email" required placeholder="usuario@dominio.com">
+                    <input type="email" name="email" required placeholder="correo@ejemplo.com">
                 </div>
                 <div class="form-group">
                     <label>MENSAJE_SISTEMA:</label>
-                    <textarea name="message" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+                    <textarea name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn-send glitch-hover">EJECUTAR_ENVÍO →</button>
+                <button type="submit" class="btn-send">EJECUTAR_ENVÍO →</button>
                 <label for="trigger-form" class="close-form">✕ CERRAR_VENTANA</label>
             </form>
         </div>
     </aside>
 
-    <aside id="proyectos-sidebar" class="sidebar-panel right">
-        <div class="sidebar-header">
-            <label for="btn-proyectos" class="close-btn">✕ CLOSE_PROJECTS</label>
-        </div>
-        <div class="sidebar-inner">
-            <h2 class="sidebar-title">PROYECTOS_RECIENTES</h2>
-            <div class="grid-sidebar">
-                <div class="card">
-                    <a href="https://marcevil.github.io/TaskFlow/" target="_blank" class="project-link">
-                        <span class="card-tag">NODE_JS</span>
-                        <h3>TaskFlow</h3>
-                        <p>Gestión robusta con Sequelize y Node.js.</p>
-                        <span class="fake-btn">EJECUTAR_SOURCE →</span>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://marcevil.github.io/curriculum/" target="_blank" class="project-link">
-                        <span class="card-tag">WEB_DEV</span>
-                        <h3>Curriculum Vitae</h3>
-                        <p>Trayectoria técnica profesional detallada.</p>
-                        <span class="fake-btn">EJECUTAR_SOURCE →</span>
-                    </a>
-                </div>
+    <aside class="sidebar-panel right">
+        <label for="btn-proyectos" class="close-btn">✕ CLOSE_PROJECTS</label>
+        <h2 class="sidebar-title hacker-effect">PROYECTOS_RECIENTES</h2>
+        
+        <div class="grid-sidebar">
+            <div class="card glitch-hover">
+                <h3 class="hacker-effect">TaskFlow</h3>
+                <p>Gestión de tareas con Node.js y PostgreSQL.</p>
+                <span class="fake-btn">EJECUTAR_SOURCE +</span>
+            </div>
+            <div class="card glitch-hover">
+                <h3 class="hacker-effect">CheckList-Reader</h3>
+                <p>Lógica de procesamiento JSON en consola.</p>
+                <span class="fake-btn">EJECUTAR_SOURCE +</span>
             </div>
         </div>
     </aside>
@@ -167,31 +108,53 @@
         </div>
     </header>
 
-    <main class="main-content">
-        <header id="inicio" class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-image-container">
-                    <img src="assets/img/perfil.jpg" alt="Marcelo Mardones" class="hero-img">
-                    <div class="img-frame"></div>
-                </div>
-                <div class="hero-text">
-                    <h1>HOLA, SOY <span>MARCELO MARDONES</span></h1>
-                    <p class="hero-subtitle">TÉCNICO EN INFORMÁTICA // FULL-STACK DEVELOPER</p>
-                    <div class="hero-actions">
-                        <label for="btn-proyectos" class="btn-cta">EXPLORAR_TRABAJOS.EXE</label>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <section id="sobre-mi" class="container">
+        <h2 class="section-title hacker-effect">INFO_SISTEMA: PERFIL_PROFESIONAL</h2>
+        <p class="profile-text">
+            <strong class="highlight">TÉCNICO EN INFORMÁTICA</strong> con más de <span class="neon-text">20 años de experiencia autodidacta</span>. 
+            Especializado en infraestructura y actualmente enfocado en el desarrollo <strong class="highlight">Full-Stack JavaScript</strong>.
+        </p>
+    </section>
 
-        <footer>
-            <div class="container">
-                <p class="hacker-effect">CONTACTO_INMEDIATO</p>
-                <p class="footer-email">marceloinformatico.82@gmail.com</p>
-            </div>
-        </footer>
+    <footer>
+        <div class="container">
+            <p class="hacker-effect">CONTACTO_INMEDIATO</p>
+            <p>marceloinformatico.82@gmail.com</p>
+        </div>
+    </footer>
 
-        <script src="assets/js/main.js"></script>
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*";
+
+        const scrambleText = (element) => {
+            let iteration = 0;
+            const originalText = element.dataset.value;
+            let interval = setInterval(() => {
+                element.innerText = element.innerText.split("")
+                    .map((letter, index) => {
+                        if(index < iteration) return originalText[index];
+                        return letters[Math.floor(Math.random() * 42)];
+                    }).join("");
+                
+                if(iteration >= originalText.length) clearInterval(interval);
+                iteration += 1 / 3;
+            }, 30);
+        };
+
+        // Activador de efectos al cargar y al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    scrambleText(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.hacker-effect').forEach(el => {
+            el.dataset.value = el.innerText;
+            observer.observe(el);
+        });
+    </script>
 </body>
-
 </html>
